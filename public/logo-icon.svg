@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Left half (navy) -->
+  <path d="M32 6C25.2 10.4 18.6 11.9 12.5 13.6V30.2c0 13.3 8.4 24.1 19.5 27.2V6Z" fill="#0B3A8F"></path>
+  <!-- Right half (teal) -->
+  <path d="M32 6c6.8 4.4 13.4 5.9 19.5 7.6V30.2c0 13.3-8.4 24.1-19.5 27.2V6Z" fill="#11B5A6"></path>
+  <!-- Check (white) -->
+  <path d="M21.7 33.2l8.0 8.0L46.8 24.1" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
