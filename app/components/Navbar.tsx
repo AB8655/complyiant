@@ -6,22 +6,24 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="border-b border-slate-800 bg-slate-950/80 backdrop-blur">
-      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
-        {/* BRAND: shield icon + text + tagline */}
+    <header className="border-b border-slate-200 bg-white shadow-sm">
+      <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+        {/* BRAND */}
         <Link href="/" className="flex items-center gap-3">
-          <Image
-            src="/logo-icon.svg"
-            alt="Complyiant logo"
-            width={32}
-            height={32}
-            priority
-          />
+          <div className="flex items-center justify-center rounded-lg bg-emerald-500/10 p-1.5">
+            <Image
+              src="/logo-icon.svg"
+              alt="Complyiant logo"
+              width={28}
+              height={28}
+              priority
+            />
+          </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-sm font-semibold tracking-tight text-white">
+            <span className="text-base font-semibold tracking-tight text-slate-900">
               Complyiant
             </span>
-            <span className="text-xs text-slate-400">
+            <span className="text-xs text-emerald-700">
               Compliance, without the chaos
             </span>
           </div>
@@ -31,13 +33,13 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href="#login"
-            className="hidden sm:inline-block text-sm text-slate-300 hover:text-white"
+            className="hidden sm:inline-block text-sm text-slate-600 hover:text-slate-900"
           >
             Log in
           </a>
           <a
-            href="#start-trial"
-            className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-1.5 text-sm font-semibold text-slate-950 hover:bg-emerald-400 transition-colors"
+            href="#contact"
+            className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600 transition-colors"
           >
             Start trial
           </a>
