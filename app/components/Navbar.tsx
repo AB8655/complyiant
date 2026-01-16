@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="border-b border-slate-200 bg-white shadow-sm">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
       <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
         {/* BRAND */}
         <Link href="/" className="flex items-center gap-3">
@@ -23,7 +23,7 @@ export default function Navbar() {
             <span className="text-base font-semibold tracking-tight text-slate-900">
               Complyiant
             </span>
-            <span className="text-xs text-emerald-700">
+            <span className="text-[11px] text-emerald-700">
               Compliance, without the chaos
             </span>
           </div>
