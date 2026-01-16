@@ -5,88 +5,109 @@ export default function Home() {
     <div className="mx-auto max-w-6xl px-4 py-8 md:py-14 space-y-14 md:space-y-16">
       {/* HERO */}
       <section className="grid gap-10 md:grid-cols-2 md:items-center">
+        {/* Left column: copy + CTA */}
         <div className="space-y-6">
           <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 border border-emerald-100">
-            Built in Canada for Canadian businesses &amp; firms
+            Built for small businesses and the firms that support them
           </span>
 
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 leading-tight">
-            Compliance {" "}
+            Compliance{" "}
             <span className="text-emerald-600">without the chaos.</span>
           </h1>
 
           <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-xl">
-            Keep Canadian tax, payroll, and registration deadlines in one place—
-            so you and your clients always know what&apos;s due, what&apos;s done,
-            and what&apos;s at risk of slipping.
+            Know what&apos;s due, what&apos;s done, and what needs attention—
+            without juggling spreadsheets, calendars, or reminders.
           </p>
 
-          <div className="flex flex-wrap items-center gap-3">
-            <a
-              href="#contact"
-              className="inline-flex items-center rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600 transition-colors"
-            >
-              Request early access
-            </a>
+          <p className="text-sm text-slate-600">
+            <span className="font-medium text-slate-800">
+              Track compliance, tasks, and projects
+            </span>{" "}
+            — your business, your call.
+          </p>
+
+          {/* CTA block */}
+          <div className="mt-8 flex flex-col items-start gap-4">
+            {/* Primary CTA row */}
+            <div className="flex items-center gap-4">
+              <a
+                href="#contact"
+                className="rounded-md bg-emerald-600 px-6 py-3 text-sm font-medium text-white hover:bg-emerald-700"
+              >
+                Start free trial
+              </a>
+              <span className="text-xs text-slate-500">
+                No credit card required
+              </span>
+            </div>
+
+            {/* Trust bullets */}
+            <ul className="mt-4 space-y-1 list-disc list-inside text-sm text-slate-600">
+              <li>Designed for Canadian compliance workflows</li>
+              <li>Built for small businesses, bookkeepers, and firms</li>
+            </ul>
+
+            {/* Secondary CTA (centered + stronger) */}
             <a
               href="#pricing"
-              className="text-sm text-slate-700 hover:text-slate-900"
+              className="mx-auto mt-3 block text-sm font-semibold text-slate-800 hover:text-slate-900"
             >
               See account options →
             </a>
           </div>
-
-          <div className="flex flex-wrap gap-4 text-xs text-slate-500">
-            <span>Designed for Canadian compliance workflows</span>
-            <span>•</span>
-            <span>Built for small businesses, bookkeepers, and firms</span>
-          </div>
         </div>
 
-        {/* Simple “app preview” block */}
+        {/* Right column: Simple “app preview” block */}
         <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
-          <div className="flex items-center justify-between mb-3 text-xs text-slate-500">
+          <div className="mb-3 flex items-center justify-between text-xs text-slate-500">
             <span>Compliance dashboard</span>
             <span>Sample view</span>
           </div>
           <div className="space-y-2 text-xs">
-            <div className="flex justify-between rounded-lg bg-slate-50 px-3 py-2">
-              <div>
-                <div className="font-medium text-slate-900">
-                  GST / HST filing
-                </div>
-                <div className="text-slate-600 text-[11px]">
-                  Quarterly · RDS Office Services
-                </div>
-              </div>
-              <span className="rounded-full bg-amber-50 px-2 py-0.5 text-[11px] text-amber-700 border border-amber-100">
-                Due soon
-              </span>
-            </div>
-            <div className="flex justify-between rounded-lg bg-slate-50 px-3 py-2">
-              <div>
-                <div className="font-medium text-slate-900">
-                  Payroll remittance
-                </div>
-                <div className="text-slate-600 text-[11px]">
-                  Monthly · All companies
-                </div>
-              </div>
-              <span className="rounded-full bg-red-50 px-2 py-0.5 text-[11px] text-red-700 border border-red-100">
-                Overdue
-              </span>
-            </div>
+            {/* On track first */}
             <div className="flex justify-between rounded-lg bg-slate-50 px-3 py-2">
               <div>
                 <div className="font-medium text-slate-900">
                   WCB / WSIB filing
                 </div>
-                <div className="text-slate-600 text-[11px]">
+                <div className="text-[11px] text-slate-600">
                   Annual · Upcoming
                 </div>
               </div>
-              <span className="rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] text-emerald-700 border border-emerald-100">
+              <span className="rounded-full border border-emerald-100 bg-emerald-50 px-2 py-0.5 text-[11px] text-emerald-700">
                 On track
+              </span>
+            </div>
+
+            {/* Due soon */}
+            <div className="flex justify-between rounded-lg bg-slate-50 px-3 py-2">
+              <div>
+                <div className="font-medium text-slate-900">
+                  GST / HST filing
+                </div>
+                <div className="text-[11px] text-slate-600">
+                  Quarterly · RDS Office Services
+                </div>
+              </div>
+              <span className="rounded-full border border-amber-100 bg-amber-50 px-2 py-0.5 text-[11px] text-amber-700">
+                Due soon
+              </span>
+            </div>
+
+            {/* Overdue last */}
+            <div className="flex justify-between rounded-lg bg-slate-50 px-3 py-2">
+              <div>
+                <div className="font-medium text-slate-900">
+                  Payroll remittance
+                </div>
+                <div className="text-[11px] text-slate-600">
+                  Monthly · All companies
+                </div>
+              </div>
+              <span className="rounded-full border border-red-100 bg-red-50 px-2 py-0.5 text-[11px] text-red-700">
+                Overdue
               </span>
             </div>
           </div>
@@ -96,7 +117,7 @@ export default function Home() {
       {/* WHO IT'S FOR STRIP */}
       <section>
         <div className="inline-flex flex-wrap items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-xs text-slate-700">
-          <span className="font-semibold text-slate-900 mr-1">
+          <span className="mr-1 font-semibold text-slate-900">
             Who is Complyiant for?
           </span>
           <span className="rounded-full bg-white px-2 py-0.5 text-[11px]">
@@ -111,93 +132,131 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURES */}
+      {/* FEATURES – two cards only */}
       <section id="features" className="space-y-6">
         <h2 className="text-xl md:text-2xl font-semibold text-slate-900">
           Built for small businesses and the firms that support them.
         </h2>
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="space-y-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
             <h3 className="text-sm font-semibold text-slate-900">
               Centralized compliance hub
             </h3>
-            <p className="text-sm text-slate-700 leading-snug">
-              See every filing, registration, and renewal for a company in one
-              shared list instead of scattered spreadsheets and emails.
+            <p className="text-sm leading-snug text-slate-700">
+              See payroll, tax, WCB, subscriptions, and renewals for a company
+              in one shared list instead of scattered spreadsheets and emails.
             </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
+          <div className="space-y-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
             <h3 className="text-sm font-semibold text-slate-900">
               Smart recurring schedules
             </h3>
-            <p className="text-sm text-slate-700 leading-snug">
+            <p className="text-sm leading-snug text-slate-700">
               Monthly, quarterly, annual—set it once and Complyiant keeps track
               of what&apos;s due, what&apos;s overdue, and what&apos;s coming up.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
-            <h3 className="text-sm font-semibold text-slate-900">
-              Company-wide calendar &amp; chat
-            </h3>
-            <p className="text-sm text-slate-700 leading-snug">
-              One appointment calendar and one chat per company, so everyone
-              sees the same deadlines, meetings, and messages.
             </p>
           </div>
         </div>
       </section>
 
-      {/* PRICING */}
+      {/* COLLABORATION DETAILS */}
+      <section className="space-y-4">
+        <h2 className="text-xl md:text-2xl font-semibold text-slate-900">
+          Calendar &amp; messaging that match how you work.
+        </h2>
+        <p className="text-sm text-slate-700 max-w-xl">
+          Give your team one place to see what&apos;s happening and talk about
+          it—without bouncing between separate apps.
+        </p>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {/* Calendar details */}
+          <div className="space-y-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Company-wide calendar
+            </h3>
+            <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
+              <li>
+                View company-wide appointments or your own private appointments
+              </li>
+              <li>Switch between monthly, weekly, and daily views</li>
+              <li>Keep deadlines, meetings, and key dates in one place</li>
+            </ul>
+          </div>
+
+          {/* Messaging details */}
+          <div className="space-y-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+            <h3 className="text-sm font-semibold text-slate-900">Messaging</h3>
+            <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
+              <li>
+                Company-wide broadcasts for announcements and reminders
+              </li>
+              <li>Person-to-person messaging for quick questions</li>
+              <li>Conversations stay tied to the company</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING / ACCOUNT TYPES */}
       <section id="pricing" className="space-y-4">
         <h2 className="text-xl md:text-2xl font-semibold text-slate-900">
           Pricing that fits how you work.
         </h2>
         <p className="text-sm text-slate-700 max-w-xl">
-          Two simple account types—one for a single business, one for firms that
-          manage many companies.
+          Two simple account types—one for a single business, one for firms or
+          multi-entity setups that manage many companies or projects.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">
           {/* Single business card */}
-          <div className="rounded-2xl border border-slate-200 bg-white p-5 space-y-3 shadow-sm">
+          <div className="space-y-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div className="flex items-baseline justify-between">
               <div>
                 <div className="text-sm font-semibold text-slate-900">
                   Single business
                 </div>
-                <div className="text-xs text-slate-600">For one company.</div>
+                <div className="text-xs text-slate-600">
+                  For one company and its team.
+                </div>
               </div>
-              <span className="rounded-full bg-emerald-50 px-3 py-1 text-[11px] font-medium text-emerald-700 border border-emerald-100">
+              <span className="rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-[11px] font-medium text-emerald-700">
                 Early access pricing
               </span>
             </div>
-            <ul className="text-sm text-slate-700 space-y-1 list-disc list-inside">
+            <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
               <li>One company on the account.</li>
-              <li>Unlimited users for that company.</li>
+              <li>
+                Add team members as needed—no per-user pricing during early
+                access.
+              </li>
               <li>Tasks, calendar, and chat all in one place.</li>
             </ul>
           </div>
 
           {/* Firm / multi-company card */}
-          <div className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-5 space-y-3 shadow-sm">
+          <div className="space-y-3 rounded-2xl border border-emerald-200 bg-emerald-50/60 p-5 shadow-sm">
             <div className="flex items-baseline justify-between">
               <div>
                 <div className="text-sm font-semibold text-slate-900">
                   Firm / multi-company
                 </div>
                 <div className="text-xs text-slate-600">
-                  For Canadian bookkeepers and accounting firms.
+                  For bookkeepers, accounting firms, or multi-entity businesses.
                 </div>
               </div>
-              <span className="rounded-full bg-white px-3 py-1 text-[11px] font-medium text-emerald-700 border border-emerald-200">
+              <span className="rounded-full border border-emerald-200 bg-white px-3 py-1 text-[11px] font-medium text-emerald-700">
                 Early access pricing
               </span>
             </div>
-            <ul className="text-sm text-slate-700 space-y-1 list-disc list-inside">
-              <li>Unlimited client companies on one firm account.</li>
-              <li>Unlimited users across your firm and each client.</li>
+            <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
+              <li>
+                Track multiple client companies, projects, or entities from one
+                firm account.
+              </li>
+              <li>Add firm staff and client users as needed.</li>
               <li>Tasks, calendar, and chat for every company you manage.</li>
             </ul>
           </div>
@@ -215,18 +274,18 @@ export default function Home() {
         className="space-y-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-slate-900">
-          Request early access to Complyiant.
+          Start your free trial of Complyiant.
         </h2>
         <p className="text-sm text-slate-700 max-w-xl">
-          Tell us briefly how you handle compliance today, and we&apos;ll show
-          you what it looks like inside Complyiant for your Canadian business
-          or firm.
+          Tell us briefly how you handle compliance today—single business or
+          multi-company—and we&apos;ll set up a free trial that mirrors how you
+          actually work.
         </p>
         <a
           href="mailto:info@example.com"
-          className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600 transition-colors"
+          className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
         >
-          Email us to request early access
+          Email us to start your free trial
         </a>
       </section>
     </div>
