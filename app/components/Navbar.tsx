@@ -24,7 +24,7 @@ export default function Navbar() {
               Complyiant
             </span>
             <span className="text-[11px] text-emerald-700">
-              Compliance, without the chaos
+              Built in Canada for Canadian businesses
             </span>
           </div>
         </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
             href="#contact"
             className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600 transition-colors"
           >
-            Start trial
+            Request early access
           </a>
         </div>
       </div>

@@ -2,44 +2,44 @@
 
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-10 md:py-16 space-y-16">
+    <div className="mx-auto max-w-6xl px-4 py-8 md:py-14 space-y-14 md:space-y-16">
       {/* HERO */}
       <section className="grid gap-10 md:grid-cols-2 md:items-center">
         <div className="space-y-6">
           <span className="inline-flex items-center rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700 border border-emerald-100">
-            Built for bookkeepers &amp; small business owners
+            Built in Canada for Canadian businesses &amp; firms
           </span>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900">
-            Compliance tasks, handled{" "}
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900 leading-tight">
+            Compliance {" "}
             <span className="text-emerald-600">without the chaos.</span>
           </h1>
 
-          <p className="text-sm md:text-base text-slate-700 leading-relaxed">
-            Complyiant keeps recurring deadlines, filings, and registrations in
-            one place—so you and your clients always know what&apos;s due,
-            what&apos;s done, and what&apos;s at risk of slipping.
+          <p className="text-sm md:text-base text-slate-700 leading-relaxed max-w-xl">
+            Keep Canadian tax, payroll, and registration deadlines in one place—
+            so you and your clients always know what&apos;s due, what&apos;s done,
+            and what&apos;s at risk of slipping.
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href="#start-trial"
+              href="#contact"
               className="inline-flex items-center rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white hover:bg-emerald-600 transition-colors"
             >
-              Start free trial
+              Request early access
             </a>
             <a
-              href="#contact"
+              href="#pricing"
               className="text-sm text-slate-700 hover:text-slate-900"
             >
-              Book a walkthrough →
+              See account options →
             </a>
           </div>
 
           <div className="flex flex-wrap gap-4 text-xs text-slate-500">
-            <span>No credit card required</span>
-            <span>•</span>
             <span>Designed for Canadian compliance workflows</span>
+            <span>•</span>
+            <span>Built for small businesses, bookkeepers, and firms</span>
           </div>
         </div>
 
@@ -94,13 +94,13 @@ export default function Home() {
       </section>
 
       {/* WHO IT'S FOR STRIP */}
-      <section className="mt-4">
+      <section>
         <div className="inline-flex flex-wrap items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-xs text-slate-700">
           <span className="font-semibold text-slate-900 mr-1">
             Who is Complyiant for?
           </span>
           <span className="rounded-full bg-white px-2 py-0.5 text-[11px]">
-            Small businesses
+            Canadian small businesses
           </span>
           <span className="rounded-full bg-white px-2 py-0.5 text-[11px]">
             Bookkeepers
@@ -112,43 +112,42 @@ export default function Home() {
       </section>
 
       {/* FEATURES */}
-<section id="features" className="space-y-6">
-  <h2 className="text-xl md:text-2xl font-semibold text-slate-900">
-    Built for small businesses and the firms that support them.
-  </h2>
-  <div className="grid gap-6 md:grid-cols-3">
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
-      <h3 className="text-sm font-semibold text-slate-900">
-        Centralized compliance hub
-      </h3>
-      <p className="text-sm text-slate-700 leading-snug">
-        See every filing, registration, and renewal for a company in one shared
-        list instead of scattered spreadsheets and emails.
-      </p>
-    </div>
+      <section id="features" className="space-y-6">
+        <h2 className="text-xl md:text-2xl font-semibold text-slate-900">
+          Built for small businesses and the firms that support them.
+        </h2>
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Centralized compliance hub
+            </h3>
+            <p className="text-sm text-slate-700 leading-snug">
+              See every filing, registration, and renewal for a company in one
+              shared list instead of scattered spreadsheets and emails.
+            </p>
+          </div>
 
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
-      <h3 className="text-sm font-semibold text-slate-900">
-        Smart recurring schedules
-      </h3>
-      <p className="text-sm text-slate-700 leading-snug">
-        Monthly, quarterly, annual—set it once and Complyiant keeps track of
-        what&apos;s due, what&apos;s overdue, and what&apos;s coming up.
-      </p>
-    </div>
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Smart recurring schedules
+            </h3>
+            <p className="text-sm text-slate-700 leading-snug">
+              Monthly, quarterly, annual—set it once and Complyiant keeps track
+              of what&apos;s due, what&apos;s overdue, and what&apos;s coming up.
+            </p>
+          </div>
 
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
-      <h3 className="text-sm font-semibold text-slate-900">
-        Company-wide calendar &amp; chat
-      </h3>
-      <p className="text-sm text-slate-700 leading-snug">
-        One appointment calendar and one chat per company, so everyone sees the
-        same deadlines, meetings, and messages.
-      </p>
-    </div>
-  </div>
-</section>
-
+          <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-2 shadow-sm">
+            <h3 className="text-sm font-semibold text-slate-900">
+              Company-wide calendar &amp; chat
+            </h3>
+            <p className="text-sm text-slate-700 leading-snug">
+              One appointment calendar and one chat per company, so everyone
+              sees the same deadlines, meetings, and messages.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* PRICING */}
       <section id="pricing" className="space-y-4">
@@ -189,7 +188,7 @@ export default function Home() {
                   Firm / multi-company
                 </div>
                 <div className="text-xs text-slate-600">
-                  For bookkeepers and accounting firms.
+                  For Canadian bookkeepers and accounting firms.
                 </div>
               </div>
               <span className="rounded-full bg-white px-3 py-1 text-[11px] font-medium text-emerald-700 border border-emerald-200">
@@ -216,17 +215,18 @@ export default function Home() {
         className="space-y-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
       >
         <h2 className="text-xl font-semibold text-slate-900">
-          See if Complyiant fits your workflow.
+          Request early access to Complyiant.
         </h2>
         <p className="text-sm text-slate-700 max-w-xl">
           Tell us briefly how you handle compliance today, and we&apos;ll show
-          you what it looks like inside Complyiant for your business or firm.
+          you what it looks like inside Complyiant for your Canadian business
+          or firm.
         </p>
         <a
           href="mailto:info@example.com"
           className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600 transition-colors"
         >
-          Email us to book a walkthrough
+          Email us to request early access
         </a>
       </section>
     </div>
