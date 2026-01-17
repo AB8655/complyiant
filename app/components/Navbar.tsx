@@ -6,8 +6,8 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
-      <div className="mx-auto grid max-w-6xl grid-cols-3 items-center px-4 py-4">
+    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+      <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
         {/* LEFT: BRAND */}
         <Link href="/" className="flex items-center gap-3">
           <div className="flex items-center justify-center rounded-lg bg-emerald-500/10 p-1.5">
@@ -19,31 +19,41 @@ export default function Navbar() {
               priority
             />
           </div>
-
           <div className="flex flex-col leading-tight">
             <span className="text-base font-semibold tracking-tight text-slate-900">
               Complyiant
             </span>
-            <span className="text-[11px] text-slate-600">
-              Compliance, without the chaos.
+            <span className="text-[11px] text-slate-500">
+              Compliance without the chaos
             </span>
           </div>
         </Link>
 
-        {/* CENTER: Proudly 🍁 Canadian */}
-        <div className="flex items-center justify-center gap-1.5 text-sm text-slate-600">
+        {/* CENTER: IDENTITY */}
+        <div className="hidden md:flex items-center gap-1 text-xs font-medium text-slate-700">
           <span>Proudly</span>
-          <span aria-hidden="true">🍁</span>
+          <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 border border-emerald-100 px-1.5 py-0.5">
+            <svg
+              viewBox="0 0 24 24"
+              className="h-3 w-3 text-emerald-700"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 2l2 4.3 4.7-.8-2.7 3.8 2.7 3.8-4.7-.8L12 22l-2-9.7-4.7.8 2.7-3.8-2.7-3.8 4.7.8z"
+                fill="currentColor"
+              />
+            </svg>
+          </span>
           <span>Canadian</span>
         </div>
 
-        {/* RIGHT: CONTACT */}
-        <div className="flex justify-end">
+        {/* RIGHT: CTA */}
+        <div className="flex items-center gap-3">
           <a
-            href="#contact"
-            className="rounded-md bg-emerald-600 px-4 py-2 text-sm font-medium text-white hover:bg-emerald-700"
+            href="https://microcompliance-frontend.onrender.com/signup"
+            className="rounded-md bg-emerald-600 px-4 py-2 text-xs sm:text-sm font-medium text-white hover:bg-emerald-700"
           >
-            Contact
+            Start free trial
           </a>
         </div>
       </div>
