@@ -206,51 +206,73 @@ export default function Home() {
           Pricing that fits how you work.
         </h2>
         <p className="text-sm text-slate-700 max-w-xl">
-          Two simple account types—one for a single business, one for firms or
-          multi-entity setups that manage many companies or projects.
+          Pricing is based on the number of companies you manage—not the number
+          of users. Add your whole team without per-user fees.
         </p>
 
         <div className="grid gap-6 md:grid-cols-2">
           {/* Single business card */}
-          <div className="space-y-3 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+          <div className="space-y-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
             <div className="flex items-baseline justify-between">
               <div>
                 <div className="text-sm font-semibold text-slate-900">
-                  Single business
+                  Single Business
                 </div>
                 <div className="text-xs text-slate-600">
                   For one company and its team.
                 </div>
               </div>
               <span className="rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1 text-[11px] font-medium text-emerald-700">
-                Early access pricing
+                All users included
               </span>
             </div>
+
+            <div className="flex items-baseline gap-1">
+              <span className="text-2xl font-semibold text-slate-900">
+                $19
+              </span>
+              <span className="text-xs text-slate-600">/ month</span>
+            </div>
+
             <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
-              <li>One company on the account.</li>
-              <li>
-                Add team members as needed—no per-user pricing during early
-                access.
-              </li>
+              <li>1 company on the account.</li>
+              <li>Add as many team members as you need.</li>
               <li>Tasks, calendar, and chat all in one place.</li>
             </ul>
           </div>
 
           {/* Firm / multi-company card */}
-          <div className="space-y-3 rounded-2xl border border-emerald-200 bg-emerald-50/60 p-5 shadow-sm">
+          <div className="space-y-4 rounded-2xl border border-emerald-200 bg-emerald-50/60 p-5 shadow-sm">
             <div className="flex items-baseline justify-between">
               <div>
                 <div className="text-sm font-semibold text-slate-900">
-                  Firm / multi-company
+                  Multi-Company / Firm
                 </div>
                 <div className="text-xs text-slate-600">
-                  For bookkeepers, accounting firms, or multi-entity businesses.
+                  For bookkeepers, accounting firms, or multi-entity
+                  businesses.
                 </div>
               </div>
               <span className="rounded-full border border-emerald-200 bg-white px-3 py-1 text-[11px] font-medium text-emerald-700">
-                Early access pricing
+                All users included
               </span>
             </div>
+
+            <div className="space-y-1 text-sm text-slate-800">
+              <div className="flex items-baseline justify-between">
+                <span>2–49 companies</span>
+                <span className="font-semibold">$49 / month</span>
+              </div>
+              <div className="flex items-baseline justify-between">
+                <span>50–99 companies</span>
+                <span className="font-semibold">$79 / month</span>
+              </div>
+              <div className="flex items-baseline justify-between">
+                <span>100+ companies</span>
+                <span className="font-semibold">Contact us</span>
+              </div>
+            </div>
+
             <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
               <li>
                 Track multiple client companies, projects, or entities from one
@@ -263,8 +285,8 @@ export default function Home() {
         </div>
 
         <p className="text-xs text-slate-500">
-          Tell us about your business or firm and we&apos;ll confirm a monthly
-          rate that fits your workload.
+          All prices in CAD. Tell us about your business or firm and we&apos;ll
+          confirm the right plan for your workload.
         </p>
       </section>
 
