@@ -24,9 +24,13 @@ export default function Footer() {
           <a href="/terms" className="hover:text-white">
             Terms
           </a>
-          <a href="#contact" className="hover:text-white">
+          <a
+            href="https://microcompliance-frontend.onrender.com/signup"
+            className="hover:text-white transition-colors"
+          >
             Contact
           </a>
+      
         </div>
 
       </div>
