@@ -114,6 +114,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* HOW IT WORKS */}
+      <section className="space-y-4">
+        <h2 className="text-xl md:text-2xl font-semibold text-slate-900">
+          How it works
+        </h2>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">
+              1. Create your account
+            </div>
+            <p className="mt-1 text-sm text-slate-700">
+              Sign up with your email—no credit card required.
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">
+              2. Choose Single or Multi
+            </div>
+            <p className="mt-1 text-sm text-slate-700">
+              Pick the setup that matches how many companies or projects you manage.
+            </p>
+          </div>
+
+          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div className="text-sm font-semibold text-slate-900">
+              3. Add companies and tasks
+            </div>
+            <p className="mt-1 text-sm text-slate-700">
+              Track compliance, schedules, and deadlines in one place.
+            </p>
+          </div>
+        </div>
+      </section>
+
+
       {/* WHO IT'S FOR STRIP */}
       <section>
         <div className="inline-flex flex-wrap items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-xs text-slate-700">
