@@ -33,7 +33,7 @@ export default function Home() {
             {/* Primary CTA row */}
             <div className="flex items-center gap-4">
               <a
-                href="#contact"
+                href="https://microcompliance-frontend.onrender.com/signup"
                 className="rounded-md bg-emerald-600 px-6 py-3 text-sm font-medium text-white hover:bg-emerald-700"
               >
                 Start free trial
@@ -285,8 +285,8 @@ export default function Home() {
         </div>
 
         <p className="text-xs text-slate-500">
-          All prices in CAD. Tell us about your business or firm and we&apos;ll
-          confirm the right plan for your workload.
+          All prices in CAD. Choose your plan during signup based on how many
+          companies you manage.
         </p>
       </section>
 
@@ -299,15 +299,15 @@ export default function Home() {
           Start your free trial of Complyiant.
         </h2>
         <p className="text-sm text-slate-700 max-w-xl">
-          Tell us briefly how you handle compliance today—single business or
-          multi-company—and we&apos;ll set up a free trial that mirrors how you
-          actually work.
+          Use our signup page to create your account. Once you&apos;ve entered
+          your name, email, and password, you&apos;ll choose between a Single
+          Business or Multi-Company account based on how you work.
         </p>
         <a
-          href="mailto:info@example.com"
+          href="https://microcompliance-frontend.onrender.com/signup"
           className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
         >
-          Email us to start your free trial
+          Go to signup
         </a>
       </section>
     </div>
