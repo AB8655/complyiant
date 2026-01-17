@@ -29,22 +29,22 @@ export default function Home() {
           </p>
 
           {/* CTA block */}
-          <div className="mt-8 flex flex-col items-start gap-4">
+          <div className="mt-8 flex flex-col items-stretch gap-4">
             {/* Primary CTA row */}
-            <div className="flex items-center gap-4">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
               <a
                 href="https://microcompliance-frontend.onrender.com/signup"
-                className="rounded-md bg-emerald-600 px-6 py-3 text-sm font-medium text-white hover:bg-emerald-700"
+                className="w-full sm:w-auto text-center rounded-md bg-emerald-600 px-6 py-3 text-sm font-medium text-white hover:bg-emerald-700"
               >
                 Start free trial
               </a>
-              <span className="text-xs text-slate-500">
+              <span className="text-xs text-slate-500 text-center sm:text-left">
                 No credit card required
               </span>
             </div>
 
             {/* Trust bullets */}
-            <ul className="mt-4 space-y-1 list-disc list-inside text-sm text-slate-600">
+            <ul className="mt-2 space-y-1 list-disc list-inside text-sm text-slate-600">
               <li>Designed for Canadian compliance workflows</li>
               <li>Built for small businesses, bookkeepers, and firms</li>
             </ul>
@@ -52,7 +52,7 @@ export default function Home() {
             {/* Secondary CTA (centered + stronger) */}
             <a
               href="#pricing"
-              className="mx-auto mt-3 block text-sm font-semibold text-slate-800 hover:text-slate-900"
+              className="mx-auto mt-2 block text-sm font-semibold text-slate-800 hover:text-slate-900"
             >
               See account options →
             </a>
@@ -305,7 +305,7 @@ export default function Home() {
         </p>
         <a
           href="https://microcompliance-frontend.onrender.com/signup"
-          className="inline-flex items-center rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
+          className="inline-flex justify-center sm:justify-start w-full sm:w-auto rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
         >
           Go to signup
         </a>
