@@ -30,20 +30,9 @@ export default function Navbar() {
         </Link>
 
         {/* CENTER: IDENTITY */}
-        <div className="hidden md:flex items-center gap-1 text-xs font-medium text-slate-700">
+        <div className="flex items-center gap-1 text-[10px] md:text-xs font-medium text-slate-700">
           <span>Proudly</span>
-          <span className="inline-flex items-center justify-center rounded-full bg-emerald-50 border border-emerald-100 px-1.5 py-0.5">
-            <svg
-              viewBox="0 0 24 24"
-              className="h-3 w-3 text-emerald-700"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 2l2 4.3 4.7-.8-2.7 3.8 2.7 3.8-4.7-.8L12 22l-2-9.7-4.7.8 2.7-3.8-2.7-3.8 4.7.8z"
-                fill="currentColor"
-              />
-            </svg>
-          </span>
+          <span aria-hidden="true">🍁</span>
           <span>Canadian</span>
         </div>
 
