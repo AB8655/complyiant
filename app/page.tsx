@@ -1,4 +1,5 @@
 // app/page.tsx
+import { SIGNUP_URL } from "@/app/lib/urls";
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
               {/* Primary CTA row */}
               <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                 <a
-                  href="https://microcompliance-frontend.onrender.com/signup"
+                  href={SIGNUP_URL}
                   className="w-full sm:w-auto text-center rounded-md bg-emerald-600 px-6 py-3 text-sm font-medium text-white hover:bg-emerald-700"
                 >
                   Start free trial
@@ -215,6 +216,7 @@ export default function Home() {
           </p>
 
           <div className="grid gap-6 md:grid-cols-2">
+            {/* Calendar details */}
             <div className="space-y-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
               <h3 className="text-sm font-semibold text-slate-900">
                 Company-wide calendar
@@ -228,6 +230,7 @@ export default function Home() {
               </ul>
             </div>
 
+            {/* Messaging details */}
             <div className="space-y-2 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
               <h3 className="text-sm font-semibold text-slate-900">Messaging</h3>
               <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
@@ -321,11 +324,21 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-xs text-slate-500">
+          <p className="text-sm text-slate-600 text-center">
             All prices in CAD. Choose your plan during signup based on how many
             companies you manage.
           </p>
+          <ul className="mx-auto max-w-xl list-disc list-inside text-sm text-slate-600">
+          <li>30-day free trial — no credit card required</li>
+          <li>Cancel anytime — data stays accessible according to your account settings</li>
+        </ul>
+
         </section>
+        
+
+
+        
+
 
         {/* CONTACT / CTA */}
         <section
@@ -341,7 +354,7 @@ export default function Home() {
             Business or Multi-Company account based on how you work.
           </p>
           <a
-            href="https://microcompliance-frontend.onrender.com/signup"
+            href={SIGNUP_URL}
             className="inline-flex justify-center sm:justify-start w-full sm:w-auto rounded-full bg-emerald-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-emerald-600"
           >
             Go to signup
