@@ -3,8 +3,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { SIGNUP_URL } from "@/app/lib/urls";
 
-const SIGNUP_URL = "https://microcompliance-frontend.onrender.com/signup";
+
 
 export default function Navbar() {
   return (
