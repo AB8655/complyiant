@@ -146,17 +146,22 @@ export default function TermsPage() {
           Canada, without regard to conflict of law principles.
         </p>
   
-        <h2 className="text-lg font-semibold text-slate-900">
-          11. Contact
-        </h2>
+        
   
-        <p>
-          If you have questions about these Terms, you can contact us at:
-        </p>
-  
-        <p className="font-medium">
-          support@complyiant.com
-        </p>
+        
+        <h2 className="mt-8 text-lg font-semibold text-slate-900">
+  Contact Information
+</h2>
+<p className="mt-2 text-sm text-slate-700">
+  Questions about these Terms can be sent to{" "}
+  <a
+    href="mailto:support@complyiant.com"
+    className="text-emerald-600 hover:underline"
+  >
+    support@complyiant.com
+  </a>.
+</p>
+
       </div>
     );
   }

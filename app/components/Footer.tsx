@@ -27,10 +27,10 @@ export default function Footer() {
             Terms
           </Link>
           <a
-            href={SIGNUP_URL}
+            href="mailto:support@complyiant.com"
             className="hover:text-white transition-colors"
           >
-            Start free trial
+            Contact
           </a>
         </div>
       </div>

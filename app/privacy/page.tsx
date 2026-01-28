@@ -144,18 +144,21 @@ export default function PrivacyPage() {
           service after updates constitutes acceptance of the revised policy.
         </p>
   
-        <h2 className="text-lg font-semibold text-slate-900">
-          8. Contact Us
-        </h2>
-  
-        <p>
-          If you have questions about this Privacy Policy or how your data is
-          handled, you can contact us at:
-        </p>
-  
-        <p className="font-medium">
-          support@complyiant.com
-        </p>
+        
+        <h2 className="mt-8 text-lg font-semibold text-slate-900">
+  Contact
+</h2>
+<p className="mt-2 text-sm text-slate-700">
+  If you have questions about this Privacy Policy or how your data is handled,
+  contact us at{" "}
+  <a
+    href="mailto:support@complyiant.com"
+    className="text-emerald-600 hover:underline"
+  >
+    support@complyiant.com
+  </a>.
+</p>
+
       </div>
     );
   }
