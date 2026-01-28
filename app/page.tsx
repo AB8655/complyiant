@@ -309,9 +309,15 @@ export default function Home() {
                 </div>
                 <div className="flex items-baseline justify-between">
                   <span>100+ companies</span>
-                  <span className="font-semibold">Contact us</span>
+                  <a
+                    href="mailto:support@complyiant.com"
+                    className="font-semibold text-emerald-600 hover:underline"
+                  >
+                    Contact us
+                  </a>
                 </div>
               </div>
+              
 
               <ul className="list-disc list-inside space-y-1 text-sm text-slate-700">
                 <li>
